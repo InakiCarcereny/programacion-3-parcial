@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <title>Perfiles</title>
 </head>
-<body>
-  
+
+<body class="bg-[#161616] p-6 flex flex-col items-center">
+
+  <input 
+    type="text" 
+    id="searchInput"
+    placeholder="Buscar por nombre..."
+    class="mb-6 w-full max-w-[400px] p-2 rounded bg-[#2a2a2a] text-white outline-none"
+  />
+  <div class="flex flex-wrap gap-6 justify-center">
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=1" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">DISEÑO</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Mateo Riva</h3>
+      <p class="text-[#b3b3b3] text-xs">Especialista en diseño de sistemas interactivos.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Madrid · 8 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=2" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">DESARROLLO</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Sofía Chen</h3>
+      <p class="text-[#b3b3b3] text-xs">Especialista full-stack con pasión por Rust.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Tokio · 12 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=3" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">MARKETING</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Lucas Fernández</h3>
+      <p class="text-[#b3b3b3] text-xs">Especialista en marketing digital.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Buenos Aires · 15 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=4" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">BACKEND</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Valentina Ruiz</h3>
+      <p class="text-[#b3b3b3] text-xs">Desarrolladora backend en Node.js.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Córdoba · 10 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=5" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">FRONTEND</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Tomás García</h3>
+      <p class="text-[#b3b3b3] text-xs">Especialista en interfaces modernas.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Rosario · 9 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=6" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">UX/UI</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Camila Torres</h3>
+      <p class="text-[#b3b3b3] text-xs">Diseñadora centrada en el usuario.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Santiago · 7 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=7" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">DATA</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Diego Morales</h3>
+      <p class="text-[#b3b3b3] text-xs">Analista de datos.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Lima · 14 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=8" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">QA</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Lucía Herrera</h3>
+      <p class="text-[#b3b3b3] text-xs">Control de calidad de software.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Montevideo · 6 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=9" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">DEVOPS</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Martín Silva</h3>
+      <p class="text-[#b3b3b3] text-xs">Automatización y despliegue.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">Bogotá · 11 proyectos</p>
+    </article>
+
+    <article class="card flex flex-col gap-4 max-w-[280px] bg-[#201f1f] rounded-[8px] p-4 h-[280px] hover:bg-[#232222] transition-colors duration-300">
+      <div class="flex justify-between items-center">
+        <img src="https://i.pravatar.cc/150?img=10" class="w-[65px] h-[65px] rounded-full">
+        <span class="bg-[#2a2a2a] text-[#a1b8cb] text-[10px] px-4 py-2 rounded-full">FULLSTACK</span>
+      </div>
+      <h3 class="text-white text-xl font-semibold">Agustín Vega</h3>
+      <p class="text-[#b3b3b3] text-xs">Desarrollador full-stack.</p>
+      <div class="bg-[#b3b3b3] h-[1px]"></div>
+      <p class="text-[#e6fff3] text-sm">México · 13 proyectos</p>
+    </article>
+
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
