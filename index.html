@@ -1,11 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Perfiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+
+  <input 
+    type="text" 
+    id="search-input"
+    class="search-input"
+    placeholder="Buscar por nombre..."
+  />
+
+  <div class="container">
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=1">
+        <span>DISEÑO</span>
+      </div>
+      <h3>Mateo Riva</h3>
+      <p>Especialista en diseño de sistemas interactivos.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> mateo@mail.com</p>
+        <p><b>Ciudad:</b> Madrid</p>
+        <p><b>Experiencia:</b> 5 años</p>
+        <div class="tools">
+          <span>Figma</span>
+          <span>Adobe XD</span>
+          <span>Sketch</span>
+          <span>Photoshop</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=2">
+        <span>DESARROLLO</span>
+      </div>
+      <h3>Sofía Chen</h3>
+      <p>Desarrolladora full-stack.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> sofia@mail.com</p>
+        <p><b>Ciudad:</b> Tokio</p>
+        <p><b>Experiencia:</b> 6 años</p>
+        <div class="tools">
+          <span>React</span>
+          <span>Node</span>
+          <span>Zustand</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=3">
+        <span>MARKETING</span>
+      </div>
+      <h3>Lucas Fernández</h3>
+      <p>Especialista en marketing digital.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> lucas@mail.com</p>
+        <p><b>Ciudad:</b> Buenos Aires</p>
+        <p><b>Experiencia:</b> 7 años</p>
+        <div class="tools">
+          <span>SEO</span>
+          <span>Google Ads</span>
+          <span>Analytics</span>
+          <span>Content</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=4">
+        <span>BACKEND</span>
+      </div>
+      <h3>Valentina Ruiz</h3>
+      <p>Desarrolladora backend en Node.js.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> valen@mail.com</p>
+        <p><b>Ciudad:</b> Córdoba</p>
+        <p><b>Experiencia:</b> 5 años</p>
+        <div class="tools">
+          <span>Node</span>
+          <span>Express</span>
+          <span>MySQL</span>
+          <span>Docker</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=5">
+        <span>FRONTEND</span>
+      </div>
+      <h3>Tomás García</h3>
+      <p>Especialista en interfaces modernas.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> tomas@mail.com</p>
+        <p><b>Ciudad:</b> Rosario</p>
+        <p><b>Experiencia:</b> 4 años</p>
+        <div class="tools">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Vue</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=6">
+        <span>UX/UI</span>
+      </div>
+      <h3>Camila Torres</h3>
+      <p>Diseñadora centrada en el usuario.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> cami@mail.com</p>
+        <p><b>Ciudad:</b> Santiago</p>
+        <p><b>Experiencia:</b> 6 años</p>
+        <div class="tools">
+          <span>Figma</span>
+          <span>User Research</span>
+          <span>Prototyping</span>
+          <span>Wireframing</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=7">
+        <span>DATA</span>
+      </div>
+      <h3>Diego Morales</h3>
+      <p>Analista de datos.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> diego@mail.com</p>
+        <p><b>Ciudad:</b> Lima</p>
+        <p><b>Experiencia:</b> 8 años</p>
+        <div class="tools">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Pandas</span>
+          <span>Power BI</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=8">
+        <span>QA</span>
+      </div>
+      <h3>Lucía Herrera</h3>
+      <p>Control de calidad de software.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> lucia@mail.com</p>
+        <p><b>Ciudad:</b> Montevideo</p>
+        <p><b>Experiencia:</b> 5 años</p>
+        <div class="tools">
+          <span>Testing</span>
+          <span>Jest</span>
+          <span>Cypress</span>
+          <span>Selenium</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=9">
+        <span>DEVOPS</span>
+      </div>
+      <h3>Martín Silva</h3>
+      <p>Automatización y despliegue.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> martin@mail.com</p>
+        <p><b>Ciudad:</b> Bogotá</p>
+        <p><b>Experiencia:</b> 9 años</p>
+        <div class="tools">
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>CI/CD</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <img src="https://i.pravatar.cc/150?img=10">
+        <span>FULLSTACK</span>
+      </div>
+      <h3>Agustín Vega</h3>
+      <p>Desarrollador full-stack.</p>
+
+      <div class="divider"></div>
+      <button class="toggle-btn">Leer más</button>
+
+      <div class="extra">
+        <p><b>Email:</b> agus@mail.com</p>
+        <p><b>Ciudad:</b> México</p>
+        <p><b>Experiencia:</b> 7 años</p>
+        <div class="tools">
+          <span>React</span>
+          <span>Node</span>
+          <span>MongoDB</span>
+          <span>Next.js</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
