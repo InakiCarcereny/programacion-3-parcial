@@ -27,10 +27,12 @@ body {
 	min-height: 100vh;
 	font-family: "Manrope", sans-serif;
 	background-color: var(--primary-dark-bg-color);
+	transition: background-color 0.3s;
 }
 
 body.light {
 	background-color: var(--primary-light-bg-color);
+	transition: background-color 0.3s;
 }
 
 header {
@@ -40,10 +42,12 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: background-color 0.3s;
 }
 
 body.light header {
 	background-color: var(--secondary-light-bg-color);
+	transition: background-color 0.3s;
 }
 
 .header-container {
