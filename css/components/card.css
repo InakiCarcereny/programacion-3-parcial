@@ -19,8 +19,16 @@
 	transition: background-color 0.3s;
 }
 
+body.light .card {
+	background-color: var(--third-light-bg-color);
+}
+
 .card:hover {
 	background-color: #232222;
+}
+
+body.light .card:hover {
+	background-color: #e6e6e6;
 }
 
 .card-top {
@@ -103,6 +111,10 @@
 	font-weight: 600;
 }
 
+body.light .card-name {
+	color: black;
+}
+
 .card-description {
 	color: #b3b3b3;
 	font-size: 0.75rem;
@@ -155,6 +167,10 @@
 	font-weight: 600;
 }
 
+body.light .card-value {
+	color: #333333;
+}
+
 .card-tools {
 	display: flex;
 	align-items: center;
@@ -174,6 +190,16 @@
 	transition: border-color 0.3s;
 }
 
+body.light .card-tool {
+	background-color: #d1d1d1;
+	color: #333333;
+	border: 1px solid #d1d1d1;
+}
+
 .card-tool:hover {
+	border-color: #96ffd7;
+}
+
+body.light .card-tool:hover {
 	border-color: #96ffd7;
 }

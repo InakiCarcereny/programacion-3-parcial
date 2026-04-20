@@ -21,6 +21,10 @@ main {
 	font-weight: bold;
 }
 
+body.light .section-container h2 {
+	color: black;
+}
+
 .section-container .strong-word {
 	color: var(--primary-color);
 	font-weight: bold;
