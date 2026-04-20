@@ -1,0 +1,205 @@
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 16px;
+	max-width: 260px;
+	background-color: var(--fourth-dark-bg-color);
+	border-radius: 8px;
+	padding: 16px;
+	height: 420px;
+	transition: background-color 0.3s;
+}
+
+body.light .card {
+	background-color: var(--third-light-bg-color);
+}
+
+.card:hover {
+	background-color: #232222;
+}
+
+body.light .card:hover {
+	background-color: #e6e6e6;
+}
+
+.card-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card-avatar {
+	width: 65px;
+	height: 65px;
+	border-radius: 9999px;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.card:hover .card-avatar {
+	transform: scale(1.05);
+}
+
+.card-tags {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.card-tag {
+	font-size: 10px;
+	font-weight: 700;
+	padding: 4px 12px;
+	border-radius: 9999px;
+	width: max-content;
+}
+
+.card-tag[data-category="diseño"] {
+	background-color: #bfdef6;
+	color: #497e97;
+}
+
+.card-tag[data-category="gestión"] {
+	background-color: #f6d9c3;
+	color: #a65c2b;
+}
+
+.card-tag[data-category="desarrollo"] {
+	background-color: #d1f6c8;
+	color: #4a7e3b;
+}
+
+.card-tag[data-category="marketing"] {
+	background-color: #e7e6f7;
+	color: #3e3788;
+}
+
+.card-tag[data-category="backend"] {
+	background-color: #f6c8d1;
+	color: #a63b4a;
+}
+
+.card-tag[data-category="frontend"] {
+	background-color: #c8f6f6;
+	color: #3b7ea6;
+}
+
+.card-tag[data-category="devops"] {
+	background-color: #f6f6c8;
+	color: #a6a63b;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card-name {
+	color: white;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+body.light .card-name {
+	color: black;
+}
+
+.card-description {
+	color: #b3b3b3;
+	font-size: 0.75rem;
+}
+
+.card-divider {
+	background-color: #b3b3b3;
+	width: 100%;
+	height: 0.5px;
+}
+
+.card-button {
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--primary-color);
+	padding: 8px 0;
+	color: var(--secondary-color);
+	font-weight: 600;
+	font-size: 0.875rem;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.card-button:hover {
+	background-color: white;
+}
+
+.card-extra {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card-label {
+	color: #b3b3b3;
+	font-size: 0.875rem;
+}
+
+.card-value {
+	color: #e6fff3;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+body.light .card-value {
+	color: #333333;
+}
+
+.card-tools {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card-tool {
+	background-color: #2e2e2e;
+	color: #e6fff3;
+	font-size: 0.75rem;
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 9999px;
+	border: 1px solid #2e2e2e;
+	cursor: pointer;
+	transition: border-color 0.3s;
+}
+
+body.light .card-tool {
+	background-color: #d1d1d1;
+	color: #333333;
+	border: 1px solid #d1d1d1;
+}
+
+.card-tool:hover {
+	border-color: #96ffd7;
+}
+
+body.light .card-tool:hover {
+	border-color: #96ffd7;
+}
