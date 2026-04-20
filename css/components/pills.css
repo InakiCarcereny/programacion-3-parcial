@@ -1,0 +1,22 @@
+.section-container .pills-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.section-container .pills-container .pill {
+	padding: 8px 16px;
+	background-color: var(--fourth-dark-bg-color);
+	color: #a2a1a0;
+	border-radius: 9999px;
+	font-size: smaller;
+	font-weight: 600;
+	cursor: pointer;
+	border: none;
+}
+
+.section-container .pills-container .pill.active {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
