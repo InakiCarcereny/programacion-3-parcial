@@ -7,7 +7,10 @@ export function filterByInput() {
 
 		cards.forEach((card) => {
 			const name = card.querySelector("h3").textContent.toLowerCase();
-			card.classList.toggle("hidden", !name.includes(value));
+			const match = name.includes(value);
+
+			card.classList.toggle("hidden", !match);
+			card.style.order = match ? "0" : "1";
 		});
 	});
 }
