@@ -2,7 +2,6 @@ import { profiles } from "./data.js";
 
 export function renderCards() {
 	const container = document.querySelector(".cards-container");
-	container.innerHTML = "";
 
 	profiles.forEach((profile) => {
 		const article = document.createElement("article");
