@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Profilex — explorá y descubrí perfiles de manera simple e intuitiva mediante tarjetas interactivas.">
+  <meta name="description"
+    content="Profilex — explorá y descubrí perfiles de manera simple e intuitiva mediante tarjetas interactivas.">
   <title>Profilex - Explorá Perfiles</title>
   <link rel="icon" type="image/png" href="./assets/favicon/icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,23 +16,37 @@
   <header>
     <div class="header-container">
       <h1>Profilex</h1>
-  
+
       <div class="separator">
         <div class="input-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
 
-          <input 
-            type="text"
-            id="search-input"
-            name="search-input"
-            class="search-input"
-            placeholder="Buscar perfiles..."
-          >
-        </div>      
-  
+          <input type="text" id="search-input" name="search-input" class="search-input"
+            placeholder="Buscar perfiles...">
+        </div>
+
         <button class="theme-toggle-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
-       </button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656" />
+            <path d="M6.343 17.657l-1.414 1.414" />
+            <path d="M6.343 6.343l-1.414 -1.414" />
+            <path d="M17.657 6.343l1.414 -1.414" />
+            <path d="M17.657 17.657l1.414 1.414" />
+            <path d="M4 12h-2" />
+            <path d="M12 4v-2" />
+            <path d="M20 12h2" />
+            <path d="M12 20v2" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -51,660 +67,7 @@
       </div>
 
       <div class="cards-container">
-        <article class="card" data-category="diseño">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=1"
-              alt="Foto de perfil de Mateo Riva"
-              class="card-avatar"
-            >
 
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="diseño"
-              >
-                DISEÑO
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Mateo Riva</h3>
-
-            <p class="card-description">Especialista en diseño de sistemas interactivos.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">mateo@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Madrid</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">12</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">5 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">Figma</span>
-
-            <span class="card-tool">Adobe</span>
-
-            <span class="card-tool">Sketch</span>
-
-            <span class="card-tool">GIMP</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="gestión desarrollo">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=2"
-              alt="Foto de perfil de Sofía Chen"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag"
-                data-category="gestión"
-              >
-                GESTIÓN
-              </span>
-              
-              <span 
-                class="card-tag"
-                data-category="desarrollo"
-              >
-                DESARROLLO
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Sofía Chen</h3>
-
-            <p class="card-description">Especialista en desarrollo de software y gestión de proyectos.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">sofia@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Tokio</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">30</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">6 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">React</span>
-
-            <span class="card-tool">Node</span>
-
-            <span class="card-tool">SQL</span>
-
-            <span class="card-tool">Trelo</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="marketing">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=3"
-              alt="Foto de perfil de Lucas Fernández"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="marketing"
-              >
-                MARKETING
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Lucas Fernández</h3>
-
-            <p class="card-description">Especialista en marketing digital y diseño de estrategias.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">lucas@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Buenos Aires</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">22</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">3 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">SEO</span>
-
-            <span class="card-tool">Analytics</span>
-
-            <span class="card-tool">ADS</span>
-
-            <span class="card-tool">Canva</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="backend desarrollo">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=4"
-              alt="Foto de perfil de Valentín Ruiz"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="backend"
-              >
-                BACKEND
-              </span>
-
-              <span 
-                class="card-tag" 
-                data-category="desarrollo"
-              >
-                DESARROLLO
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Valentín Ruiz</h3>
-
-            <p class="card-description">Especialista en desarrollo backend con Node.js.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">valentin@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Córdoba</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">50</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">10+ años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">Node</span>
-
-            <span class="card-tool">Express</span>
-
-            <span class="card-tool">SQL</span>
-
-            <span class="card-tool">Docker</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="frontend desarrollo">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=5"
-              alt="Foto de perfil de Tomasa García"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="frontend"
-              >
-                FRONTEND
-              </span>
-
-              <span 
-                class="card-tag" 
-                data-category="desarrollo"
-              >
-                DESARROLLO
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Tomasa García</h3>
-
-            <p class="card-description">Especialista en interfaces modernas y diseños responsivos.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">tomasa@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Cataluña</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">5</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">1 año</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">HTML</span>
-
-            <span class="card-tool">CSS</span>
-            
-            <span class="card-tool">TypeScript</span>
-
-            <span class="card-tool">Vue</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="devops">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=6"
-              alt="Foto de perfil de Camilo Torres"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="devops"
-              >
-                DEVOPS
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Camilo Torres</h3>
-
-            <p class="card-description">Especialista en DevOps y automatización de procesos.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">camilo@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Santiago</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">8</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">2 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">AWS</span>
-
-            <span class="card-tool">Docker</span>
-
-            <span class="card-tool">CI/CD</span>
-
-            <span class="card-tool">ELK</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="diseño devops">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=7"
-              alt="Foto de perfil de Diego Morales"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="diseño"
-              >
-                DISEÑO
-              </span>
-
-              <span 
-                class="card-tag" 
-                data-category="devops"
-              >
-                DEVOPS
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Diego Morales</h3>
-
-            <p class="card-description">Especialista en diseños modernos y DevOps.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">diego@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Lima</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">35</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">8 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">Python</span>
-
-            <span class="card-tool">SQL</span>
-
-            <span class="card-tool">Canva</span>
-
-            <span class="card-tool">Figma</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="gestión">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=9"
-              alt="Foto de perfil de Lucía Herrera"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="gestión"
-              >
-                GESTIÓN
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Lucía Herrera</h3>
-
-            <p class="card-description">Especialista en entrega, conectando la visión del producto con el tecnicismo.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer menos</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">lucia@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Montevideo</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">45</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">10+ años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">ERP</span>
-
-            <span class="card-tool">CRM</span>
-
-            <span class="card-tool">Wrike</span>
-
-            <span class="card-tool">Trello</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="backend frontend">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=10"
-              alt="Foto de perfil de Agustina Vega"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="backend"
-              >
-                BACKEND
-              </span>
-
-              <span 
-                class="card-tag" 
-                data-category="frontend"
-              >
-                FRONTEND
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Agustina Vega</h3>
-
-            <p class="card-description">Especialista en desarrollo de aplicaciones fullstack.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">agustina@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Guadalajara</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Proyectos:</span>
-
-              <span class="card-value">16</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">5 años</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">Svelte</span>
-
-            <span class="card-tool">Next</span>
-
-            <span class="card-tool">Redux</span>
-
-            <span class="card-tool">Mongo</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="marketing">
-          <div class="card-top">
-            <img 
-              src="https://i.pravatar.cc/150?img=11"
-              alt="Foto de perfil de Martín Silva"
-              class="card-avatar"
-            >
-
-            <div class="card-tags">
-              <span 
-                class="card-tag" 
-                data-category="marketing"
-              >
-                MARKETING
-              </span>
-            </div>
-          </div>
-
-          <div class="card-info">
-            <h3 class="card-name">Martín Silva</h3>
-
-            <p class="card-description">Especialista en marketing digital y estrategias de crecimiento.</p>
-          </div>
-
-          <div class="card-divider"></div>
-
-          <button class="card-button">Leer más</button>
-
-          <div class="card-extra">
-            <div class="card-row">
-              <span class="card-label">Email:</span>
-
-              <span class="card-value">martin@gmail.com</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Ciudad:</span>
-
-              <span class="card-value">Bogotá</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Projectos:</span>
-
-              <span class="card-value">60</span>
-            </div>
-            <div class="card-row">
-              <span class="card-label">Experiencia:</span>
-
-              <span class="card-value">15+ years</span>
-            </div>
-          </div>
-
-          <div class="card-tools">
-            <span class="card-tool">Asana</span>
-
-            <span class="card-tool">Monday</span>
-
-            <span class="card-tool">Jira</span>
-
-            <span class="card-tool">Trello</span>
-          </div>
-        </article>
       </div>
     </section>
   </main>
@@ -712,15 +75,15 @@
   <footer>
     <div class="footer-container">
       <div class="divider"> </div>
-      
+
       <div class="footer-content">
         <p>&copy; 2026 EDITORIAL COLECTIVA</p>
 
         <div class="footer-links">
           <a href="#" class="link">AJUSTES</a>
-  
+
           <a href="#" class="link">SOPORTE</a>
-  
+
           <a href="#" class="link">PRIVACIDAD</a>
         </div>
       </div>
@@ -729,4 +92,5 @@
 
   <script type="module" src="js/script.js"></script>
 </body>
+
 </html>
