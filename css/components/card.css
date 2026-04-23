@@ -24,7 +24,7 @@
 }
 
 body.light .card {
-	background-color: var(--third-light-bg-color);
+	background-color: var(--fourth-light-bg-color);
 }
 
 .card:hover {
@@ -124,6 +124,10 @@ body.light .card-name {
 	font-size: 0.75rem;
 }
 
+body.light .card-description {
+	color: #696262;
+}
+
 .card-divider {
 	background-color: #b3b3b3;
 	width: 100%;
@@ -161,7 +165,7 @@ body.light .card-name {
 }
 
 .card-label {
-	color: #b3b3b3;
+	color: #696262;
 	font-size: 0.875rem;
 }
 
@@ -195,8 +199,7 @@ body.light .card-value {
 
 body.light .card-tool {
 	background-color: #d1d1d1;
-	color: #333333;
-	padding: 4px 8px;
+	color: #e6fff3;
 	border: 1px solid #d1d1d1;
 }
 
