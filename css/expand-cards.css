@@ -1,19 +1,22 @@
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	height: 100%;
 }
 
-.card-extra, .card-tools {
-  overflow: hidden; 
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.3s ease-in-out, opacity 0.5s ease;
+.card-extra,
+.card-tools {
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+	transition:
+		max-height 0.3s ease-in-out,
+		opacity 0.5s ease;
 }
 
-.card-extra.activa, .card-tools.activa {
-  max-height: 600px; 
-  opacity: 1;
-
+.card-extra.activa,
+.card-tools.activa {
+	max-height: 600px;
+	opacity: 1;
 }
