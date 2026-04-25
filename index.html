@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description"
+    content="Profilex — explorá y descubrí perfiles de manera simple e intuitiva mediante tarjetas interactivas.">
+  <title>Profilex - Explorá Perfiles</title>
+  <link rel="icon" type="image/png" href="./assets/favicon/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+  <header>
+    <div class="header-container">
+      <h1>Profilex</h1>
+
+      <div class="separator">
+        <div class="input-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+
+          <input type="text" id="search-input" name="search-input" class="search-input"
+            placeholder="Buscar perfiles...">
+        </div>
+
+        <button class="theme-toggle-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#a7a6a5" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656" />
+            <path d="M6.343 17.657l-1.414 1.414" />
+            <path d="M6.343 6.343l-1.414 -1.414" />
+            <path d="M17.657 6.343l1.414 -1.414" />
+            <path d="M17.657 17.657l1.414 1.414" />
+            <path d="M4 12h-2" />
+            <path d="M12 4v-2" />
+            <path d="M20 12h2" />
+            <path d="M12 20v2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-container">
+      <h2>Colección de <span class="strong-word">Perfiles</span></h2>
+
+      <div class="pills-container">
+        <button class="pill active" data-category="all">Todos</button>
+        <button class="pill" data-category="diseño">Diseño</button>
+        <button class="pill" data-category="gestión">Gestión</button>
+        <button class="pill" data-category="desarrollo">Desarrollo</button>
+        <button class="pill" data-category="marketing">Marketing</button>
+        <button class="pill" data-category="backend">Backend</button>
+        <button class="pill" data-category="frontend">Frontend</button>
+        <button class="pill" data-category="devops">DevOps</button>
+      </div>
+
+      <div class="cards-container">
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="divider"> </div>
+
+      <div class="footer-content">
+        <p>&copy; 2026 EDITORIAL COLECTIVA</p>
+
+        <div class="footer-links">
+          <a href="#" class="link">AJUSTES</a>
+
+          <a href="#" class="link">SOPORTE</a>
+
+          <a href="#" class="link">PRIVACIDAD</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
 </body>
+
 </html>

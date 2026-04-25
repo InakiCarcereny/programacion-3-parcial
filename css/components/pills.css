@@ -1,0 +1,43 @@
+.pills-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.pill {
+	padding: 8px 16px;
+	background-color: var(--fourth-dark-bg-color);
+	color: #a2a1a0;
+	border-radius: 9999px;
+	font-size: smaller;
+	font-weight: 600;
+	cursor: pointer;
+	border: none;
+	transition:
+		background-color 0.3s,
+		transform 0.2s;
+}
+
+.pill:hover {
+	background-color: #2a2a2a;
+	transform: scale(0.95);
+}
+
+body.light .pill:hover {
+	background-color: #e6e6e6;
+}
+
+body.light .pill {
+	background-color: var(--fourth-light-bg-color);
+}
+
+.pill.active {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+body.light .pill.active {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
